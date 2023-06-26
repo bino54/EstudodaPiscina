@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EstudoPiscina.Views.SelecionarPaginaLoginPage"
+             xmlns:viewmodels="clr-namespace:EstudoPiscina.ViewModels"
+             x:DataType="viewmodels:SelecionarPaginaLoginViewModel"
+             Title="SelecionarPaginaLoginPage">
+    <VerticalStackLayout>
+        <Button Text="Selecionar Turmas" Command="{Binding SelecionarTurmasCommand}"/>
+        <Button Text="Adicionar Aluno" Command="{Binding EnviarAlunoCommand}"/>
+        <Button Text="Adicionar Turma" Command="{Binding EnviarTurmaCommand}"/>
+        <Button Text="Adicionar Ficha de Avaliação" Command="{Binding EnviarFichaCommand}"/>
+        <Button Text="Atribuir ficha de avaliacao à Turma" Command="{Binding EnviarFichaTurmaCommand}"/>
+    </VerticalStackLayout>
+</ContentPage>

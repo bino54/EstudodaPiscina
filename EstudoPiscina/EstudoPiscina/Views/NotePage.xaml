@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:EstudoPiscina.ViewModels"
+             x:DataType="viewmodel:NotePageViewModel"
+             xmlns:models="clr-namespace:EstudoPiscina.Models"
+             x:Class="EstudoPiscina.Views.NotePage"
+             Title="{Binding Avaliado.Name}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="{Binding Avaliado.Imagem}" HeightRequest="200" WidthRequest="200" Aspect="AspectFill"  Grid.RowSpan="4" Grid.Column="0"/>
+        <Label Text="{Binding Avaliado.Name,StringFormat='Nome: {1}'}" Grid.Column="1" Grid.Row="0"/>
+        <Label Text="{Binding Avaliado.Idade,StringFormat='Idade: {0} anos'}" Grid.Column="1" Grid.Row="1"/>
+        <Label Text="{Binding Avaliado.NomeTurma,StringFormat='Turma: {0}'}" Grid.Column="1" Grid.Row="2"/>
+        <Label Text="{Binding Avaliado.DataInscricao,StringFormat='Data de inscrição: {0}'}" Grid.Column="1" Grid.Row="3"/>
+
+        <CollectionView ItemsSource="{Binding Avaliado.Ficha}" Grid.Row="4" Grid.ColumnSpan="2">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Categoria">
+                    <Frame BorderColor="White">
+                        <Grid Padding="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
+                            <Label Text="{Binding Descricao}" Grid.Row="0" FontAttributes="Bold"/>
+                            <CollectionView ItemsSource="{Binding Objetivos}" Grid.Row="1" >
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate x:DataType="models:Objetivo">
+                                        <Frame>
+                                            <Frame.GestureRecognizers>
+                                                <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:NotePageViewModel}}, Path=EnviarAlunoCommand}"/>
+                                            </Frame.GestureRecognizers>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="50"/>
+                                                    <ColumnDefinition Width="75"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Label Text="{Binding Name}" Grid.Column="0"/>
+                                                <Label Text="{Binding Classificacao}" Grid.Column="2" HorizontalOptions="End" />
+                                            </Grid>
+                                        </Frame>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

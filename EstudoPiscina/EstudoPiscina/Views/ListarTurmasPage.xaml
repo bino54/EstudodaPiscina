@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EstudoPiscina.Views.ListarTurmasPage"
+             xmlns:viewmodel="clr-namespace:EstudoPiscina.ViewModels"
+             xmlns:models ="clr-namespace:EstudoPiscina.Models"
+             x:DataType="viewmodel:ListarTurmasViewModel"
+             Title="{Binding Usuario.Name}">
+
+    <VerticalStackLayout>
+        <Label Text="{Binding Usuario.Name, StringFormat='Nome de usuário: {0}'}"/>
+        <CollectionView ItemsSource="{Binding Usuario.Turmas}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Turma">
+                    <Frame BorderColor="white">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                  Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ListarTurmasViewModel}}, Path=EnviarTurmaCommand}"/>
+                        </Frame.GestureRecognizers>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="200"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Name}" Grid.Column="0"/>
+                            <Label Text="{Binding DiadaInscricao}" Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            
+        </CollectionView> 
+    </VerticalStackLayout>
+    
+</ContentPage>

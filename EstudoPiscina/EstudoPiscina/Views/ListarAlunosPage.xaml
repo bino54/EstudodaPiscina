@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EstudoPiscina.Views.ListarAlunosPage"
+             xmlns:viewmodel="clr-namespace:EstudoPiscina.ViewModels"
+             xmlns:models="clr-namespace:EstudoPiscina.Models"
+             x:DataType="viewmodel:ListarAlunosViewModel"
+             Title="{Binding Turma.Name}">
+
+    <CollectionView ItemsSource="{Binding Turma.Alunos}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="models:Avaliado">
+                <Frame BorderColor="White">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="{Binding .}"
+                                              Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ListarAlunosViewModel}}, Path=EnviarAlunoCommand}"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding Imagem}" HeightRequest="150" WidthRequest="150" Grid.RowSpan="3" Grid.Column="0"/>
+                        <Label Text="{Binding Name}" Grid.Column="1" Grid.Row="0"/>
+                        <Label Text="{Binding Idade,StringFormat='Idade: {0} anos'}" Grid.Column="1" Grid.Row="1"/>
+                        <Label Text="{Binding Nif}" Grid.Column="1" Grid.Row="2"/>
+                    </Grid>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>

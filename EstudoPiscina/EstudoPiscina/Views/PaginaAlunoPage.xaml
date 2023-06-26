@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EstudoPiscina.Views.PaginaAlunoPage"
+             xmlns:viewmodels="clr-namespace:EstudoPiscina.ViewModels"
+             x:DataType="viewmodels:PaginaAlunoViewModel"
+             Title="{Binding Usuario.Name}">
+    <VerticalStackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Nome do Aluno: "/>
+            <Entry Text="{Binding Nome}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Nif do Aluno: "/>
+            <Entry Text="{Binding Nif}"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Data de nascimento: "/>
+            <Entry Text="{Binding DiaNascimento}" Placeholder="Dia"/>
+            <Label Text=" / "/>
+            <Entry Text="{Binding MesNascimento}" Placeholder="Mes"/>
+            <Label Text=" / "/>
+            <Entry Text="{Binding AnoNascimento}" Placeholder="Ano"/>
+        </StackLayout>
+
+        <Button Text="Criar aluno" Command="{Binding CriarAlunoCommand}"/>
+    </VerticalStackLayout>
+</ContentPage>

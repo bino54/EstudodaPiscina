@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EstudoPiscina.Views.PaginaFichaPage"
+             xmlns:viewmodel="clr-namespace:EstudoPiscina.ViewModels"
+             x:DataType="viewmodel:PaginaFichaViewModel"
+             xmlns:models="clr-namespace:EstudoPiscina.Models"
+             Title="{Binding Usuario.Name}">
+    <ScrollView>
+        <VerticalStackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nome da Ficha:"/>
+                <Entry Text="{Binding Descricao2}" Placeholder="Nome da Ficha"/>
+            </StackLayout>
+            <Label Text="#######################"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Categoria:"/>
+                <Entry Text="{Binding Categoria2}" Placeholder="Nome da Categoria"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Objetivo:"/>
+                <Entry Text="{Binding Objetivo2}" Placeholder="Descricao do Objetivo"/>
+            </StackLayout>
+            <Button Text="Guardar Elemento" Command="{Binding GuardarCommand}"/>
+            <Button Text="Enviar Ficha" Command="{Binding EnviarFichaCommand}" />
+            <CollectionView ItemsSource="{Binding ListaFicha}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Categoria">
+                        <Frame BorderColor="White">
+                            <Grid Padding="2">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="3*"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="{Binding Descricao}" Grid.Row="0" FontAttributes="Bold"/>
+                                <CollectionView ItemsSource="{Binding Objetivos}" Grid.Row="1" >
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate x:DataType="models:Objetivo">
+                                            <Frame>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*"/>
+                                                        <ColumnDefinition Width="50"/>
+                                                        <ColumnDefinition Width="75"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Label Text="{Binding Name}" Grid.Column="0"/>
+                                                    <Label Text="{Binding Classificacao}" Grid.Column="2" HorizontalOptions="End" />
+                                                </Grid>
+                                            </Frame>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

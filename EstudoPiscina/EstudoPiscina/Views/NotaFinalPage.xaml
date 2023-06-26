@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EstudoPiscina.Views.NotaFinalPage"
+             xmlns:viewmodel="clr-namespace:EstudoPiscina.ViewModels"
+             x:DataType="viewmodel:NotaFinalViewModel"
+             Title="Nota Final">
+    <VerticalStackLayout>
+        <Label Text="{Binding Objetivo.Name,StringFormat='Objetivo: {0}'}"/>
+        <Label Text="{Binding Objetivo.Classificacao,StringFormat='Classificação da nota é {0}'}"/>
+        <Label Text="{Binding Objetivo.ValorNota,StringFormat='Valor da nota é {0}'}"/>
+        <Label Text="Pretende alterar a nota? Então escreva abaixo a nota atual"/>
+        <Entry Text="{Binding NotaValor}" Placeholder="Escreva o valor da nota"/>
+        <Button Text="Alterar a nota" Command="{Binding AlterarNotaCommand}"/>
+        <Button Text="Voltar atras" Command="{Binding VoltarCommand}"/>
+        <Label Text="{Binding Text}"/>
+    </VerticalStackLayout>
+</ContentPage>

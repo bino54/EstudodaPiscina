@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EstudoPiscina
+build_property.ProjectDir = C:\Users\alvar\source\repos\EstudoPiscina\EstudoPiscina\
+
+[C:/Users/alvar/source/repos/EstudoPiscina/EstudoPiscina/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EstudoPiscina.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/alvar/source/repos/EstudoPiscina/EstudoPiscina/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EstudoPiscina.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/alvar/source/repos/EstudoPiscina/EstudoPiscina/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EstudoPiscina.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/alvar/source/repos/EstudoPiscina/EstudoPiscina/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EstudoPiscina.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/alvar/source/repos/EstudoPiscina/EstudoPiscina/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EstudoPiscina.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/alvar/source/repos/EstudoPiscina/EstudoPiscina/Views/ListarAlunosPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EstudoPiscina.Views.ListarAlunosPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ListarAlunosPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ListarAlunosPage.xaml
+
+[C:/Users/alvar/source/repos/EstudoPiscina/EstudoPiscina/Views/ListarTurmasPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EstudoPiscina.Views.ListarTurmasPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ListarTurmasPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ListarTurmasPage.xaml
+
+[C:/Users/alvar/source/repos/EstudoPiscina/EstudoPiscina/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EstudoPiscina.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/alvar/source/repos/EstudoPiscina/EstudoPiscina/Views/NotaFinalPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EstudoPiscina.Views.NotaFinalPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\NotaFinalPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\NotaFinalPage.xaml
+
+[C:/Users/alvar/source/repos/EstudoPiscina/EstudoPiscina/Views/NotePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EstudoPiscina.Views.NotePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\NotePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\NotePage.xaml
+
+[C:/Users/alvar/source/repos/EstudoPiscina/EstudoPiscina/Views/OpcoesPage1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EstudoPiscina.Views.OpcoesPage1.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\OpcoesPage1.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\OpcoesPage1.xaml
+
+[C:/Users/alvar/source/repos/EstudoPiscina/EstudoPiscina/Views/SelecionarPaginaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EstudoPiscina.Views.SelecionarPaginaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SelecionarPaginaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SelecionarPaginaPage.xaml

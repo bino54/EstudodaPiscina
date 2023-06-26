@@ -1,0 +1,402 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EstudoPiscina</name>
+    </assembly>
+    <members>
+        <member name="T:EstudoPiscina.ViewModels.ListarAlunosViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.ListarAlunosViewModel.Turma">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.ListarAlunosViewModel.turma"/>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.ListarAlunosViewModel.enviarAlunoCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.ListarAlunosViewModel.EnviarAlunoCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.ListarAlunosViewModel.EnviarAlunoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.ListarAlunosViewModel.EnviarAluno(EstudoPiscina.Models.Avaliado)"/>.</summary>
+        </member>
+        <member name="T:EstudoPiscina.ViewModels.ListarTurmasViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.ListarTurmasViewModel.Usuario">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.ListarTurmasViewModel.usuario"/>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.ListarTurmasViewModel.enviarTurmaCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.ListarTurmasViewModel.EnviarTurmaCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.ListarTurmasViewModel.EnviarTurmaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.ListarTurmasViewModel.EnviarTurma(EstudoPiscina.Models.Turma)"/>.</summary>
+        </member>
+        <member name="T:EstudoPiscina.ViewModels.LoginViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.LoginViewModel.User">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.LoginViewModel.user"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.LoginViewModel.Nif">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.LoginViewModel.nif"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.LoginViewModel.Password">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.LoginViewModel.password"/>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.LoginViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.LoginViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.LoginViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.LoginViewModel.Login"/>.</summary>
+        </member>
+        <member name="T:EstudoPiscina.ViewModels.NotaFinalViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.NotaFinalViewModel.Text">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.NotaFinalViewModel.text"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.NotaFinalViewModel.Objetivo">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.NotaFinalViewModel.objetivo"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.NotaFinalViewModel.NotaValor">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.NotaFinalViewModel.notaValor"/>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.NotaFinalViewModel.alterarNotaCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.NotaFinalViewModel.AlterarNotaCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.NotaFinalViewModel.AlterarNotaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.NotaFinalViewModel.AlterarNota"/>.</summary>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.NotaFinalViewModel.voltarCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.NotaFinalViewModel.VoltarCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.NotaFinalViewModel.VoltarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.NotaFinalViewModel.Voltar"/>.</summary>
+        </member>
+        <member name="T:EstudoPiscina.ViewModels.NotePageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.NotePageViewModel.Avaliado">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.NotePageViewModel.avaliado"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.NotePageViewModel.IsRefreshing">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.NotePageViewModel.isRefreshing"/>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.NotePageViewModel.enviarAlunoCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.NotePageViewModel.EnviarAlunoCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.NotePageViewModel.EnviarAlunoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.NotePageViewModel.EnviarAluno(EstudoPiscina.Models.Objetivo)"/>.</summary>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.NotePageViewModel.refreshCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.NotePageViewModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.NotePageViewModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.NotePageViewModel.Refresh"/>.</summary>
+        </member>
+        <member name="T:EstudoPiscina.ViewModels.PaginaAlunoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaAlunoViewModel.Usuario">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaAlunoViewModel.usuario"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaAlunoViewModel.Nif">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaAlunoViewModel.nif"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaAlunoViewModel.Nome">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaAlunoViewModel.nome"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaAlunoViewModel.DiaNascimento">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaAlunoViewModel.diaNascimento"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaAlunoViewModel.MesNascimento">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaAlunoViewModel.mesNascimento"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaAlunoViewModel.AnoNascimento">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaAlunoViewModel.anoNascimento"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaAlunoViewModel.NomeTurma">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaAlunoViewModel.nomeTurma"/>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.PaginaAlunoViewModel.criarAlunoCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.PaginaAlunoViewModel.CriarAlunoCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaAlunoViewModel.CriarAlunoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.PaginaAlunoViewModel.CriarAluno"/>.</summary>
+        </member>
+        <member name="T:EstudoPiscina.ViewModels.PaginaFichaViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaFichaViewModel.Usuario">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaFichaViewModel.usuario"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaFichaViewModel.Descricao2">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaFichaViewModel.descricao2"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaFichaViewModel.Categoria2">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaFichaViewModel.categoria2"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaFichaViewModel.Objetivo2">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaFichaViewModel.objetivo2"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaFichaViewModel.ListaFicha">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaFichaViewModel.listaFicha"/>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.PaginaFichaViewModel.guardarCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.PaginaFichaViewModel.GuardarCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaFichaViewModel.GuardarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.PaginaFichaViewModel.Guardar"/>.</summary>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.PaginaFichaViewModel.enviarFichaCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.PaginaFichaViewModel.EnviarFichaCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaFichaViewModel.EnviarFichaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.PaginaFichaViewModel.EnviarFicha"/>.</summary>
+        </member>
+        <member name="T:EstudoPiscina.ViewModels.PaginaTurmaFichaModelView">
+            <inheritdoc/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaTurmaFichaModelView.Usuario">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaTurmaFichaModelView.usuario"/>
+        </member>
+        <member name="T:EstudoPiscina.ViewModels.PaginaTurmaViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaTurmaViewModel.Usuario">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaTurmaViewModel.usuario"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaTurmaViewModel.Text">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaTurmaViewModel.text"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaTurmaViewModel.Fundo">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaTurmaViewModel.fundo"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaTurmaViewModel.Alunos">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.PaginaTurmaViewModel.alunos"/>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.PaginaTurmaViewModel.receberAlunoCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.PaginaTurmaViewModel.ReceberAlunoCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaTurmaViewModel.ReceberAlunoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.PaginaTurmaViewModel.ReceberAluno(System.Int32)"/>.</summary>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.PaginaTurmaViewModel.enviarTurmaCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.PaginaTurmaViewModel.EnviarTurmaCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.PaginaTurmaViewModel.EnviarTurmaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.PaginaTurmaViewModel.EnviarTurma"/>.</summary>
+        </member>
+        <member name="T:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.Usuario">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.usuario"/>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.enviarTurmaCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.EnviarTurmaCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.EnviarTurmaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.EnviarTurma"/>.</summary>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.enviarAlunoCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.EnviarAlunoCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.EnviarAlunoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.EnviarAluno"/>.</summary>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.selecionarTurmasCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.SelecionarTurmasCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.SelecionarTurmasCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.SelecionarTurmas"/>.</summary>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.enviarFichaCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.EnviarFichaCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.EnviarFichaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.EnviarFicha"/>.</summary>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.enviarFichaTurmaCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.EnviarFichaTurmaCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.EnviarFichaTurmaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.SelecionarPaginaLoginViewModel.EnviarFichaTurma"/>.</summary>
+        </member>
+        <member name="T:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel.Turma">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel.turma"/>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel.Text">
+            <inheritdoc cref="F:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel.text"/>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel.enviarTurmaCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel.EnviarTurmaCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel.EnviarTurmaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel.EnviarTurma"/>.</summary>
+        </member>
+        <member name="F:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EstudoPiscina.ViewModels.SelecionarPaginaPageViewModel.GoBack"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Turma">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Turma" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Usuario">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Usuario" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.User">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "User" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nif">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nif" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Text">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Text" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Objetivo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Objetivo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NotaValor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NotaValor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Avaliado">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Avaliado" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nome">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nome" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.DiaNascimento">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "DiaNascimento" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MesNascimento">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MesNascimento" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AnoNascimento">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AnoNascimento" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NomeTurma">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NomeTurma" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Descricao2">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Descricao2" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Categoria2">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Categoria2" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Objetivo2">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Objetivo2" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ListaFicha">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ListaFicha" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Fundo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Fundo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Alunos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Alunos" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Turma">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Turma" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Usuario">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Usuario" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.User">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "User" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nif">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nif" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Text">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Text" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Objetivo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Objetivo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NotaValor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NotaValor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Avaliado">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Avaliado" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nome">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nome" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DiaNascimento">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DiaNascimento" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MesNascimento">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MesNascimento" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AnoNascimento">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AnoNascimento" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NomeTurma">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NomeTurma" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Descricao2">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Descricao2" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Categoria2">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Categoria2" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Objetivo2">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Objetivo2" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ListaFicha">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ListaFicha" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Fundo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Fundo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Alunos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Alunos" generated properties.</summary>
+        </member>
+    </members>
+</doc>
